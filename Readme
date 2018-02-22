@@ -1,0 +1,137 @@
+Use c++14 for the segment tree library.
+
+Usage:-
+
+How to run unit test files ?
+
+	g++ Iterator_test.cpp -std=c++14
+	g++ Build_test.cpp -std=c++14
+	g++ Update_test.cpp -std=c++14
+
+
+Functions Implemented:
+
+1) seg_build:
+
+This function builds the segment tree given the input array and the merging function.
+
+Inputs:
+
+(start_index , end_index , input_array , total_size,merging_function)
+
+start_index: the starting index of input_array from where the segment_tree needs to be built
+
+end_index: the starting index of input_array from where the segment_tree needs to be built
+
+input_array: The array on which segment_tree needs to be built
+
+size: The total declared size of input_array
+
+merging_function : the function that is used for merging between the parent node and children nodes.
+
+Output:
+
+It gives a tree with leaf nodes containing the elements of input array.
+
+2) segtree_update:
+
+This function updates the segment tree if there is an update at a single position in the input_array.
+
+Inputs:
+
+(start_index , end_index ,index ,input_array ,merging_function)
+
+start_index: the starting index of input_array from where the segment_tree was built previously using built function
+
+end_index: the starting index of input_array till where the segment_tree was built previously using built function
+
+index: The updated index in the input_array.
+
+input_array: The array on which segment_tree needs to be built
+
+merging_function : the function that is used for merging between the parent node and children nodes.
+
+
+3) segtree_query:
+
+This function takes an interval as input and outputs the value given by the merging function.
+
+Inputs:
+
+(start_index , end_index ,query_start,query_end,initialiser,input_array ,merging_function)
+
+start_index: the starting index of input_array from where the segment_tree was built previously using built function
+
+end_index: the starting index of input_array till where the segment_tree was built previously using built function
+
+query_start:The starting index of query.
+
+query_end:The ending index of query.
+
+initialiser: This is the value that will not effect the value that merging_function outputs
+
+input_array: The array on which segment_tree needs to be built
+
+merging_function : the function that is used for merging between the parent node and children nodes.
+
+Output:
+
+The value of merging function on the input interval.
+
+
+4) begin:
+
+This function returns a pointer which points to the first node of segment tree i.e root.
+
+Inputs:
+
+This has no inputs.
+
+Output:
+
+Returns the pointer that points to the root of segment tree.
+
+
+5) get_parent:
+
+This function returns a pointer which points to the parent of the input iterator.
+
+Inputs:
+
+(Iterator)
+
+Output:
+
+Returns an iterator to the parent.
+
+6) get_left_child:
+
+This function returns a pointer which points to the left child of the input iterator.
+
+Inputs:
+
+(Iterator)
+
+Output:
+
+Returns an iterator to the left child.
+
+
+7) get_right_child:
+
+This function returns a pointer which points to the right child of the input iterator.
+
+Inputs:
+
+(Iterator)
+
+Output:
+
+Returns an iterator to the right child.
+
+
+
+
+
+
+
