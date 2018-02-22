@@ -5,7 +5,7 @@ using namespace std;
 This class denotes the data-type of single node in segment tree.It
 stores the start ,end indexes and position of node in segment tree.
 */
-template<typename T>
+template<typename T> //T is the input array data-type
 class node{
 public:
   int start,end,index;
@@ -39,7 +39,7 @@ auto sum=[](auto a,auto b)
 The main segment tree class
 */
 
-template<typename T>
+template<typename T> //T is the input array data-type
 class segment_tree
 {
 
@@ -309,7 +309,6 @@ public:
     }
     int pos=fex->index;
     int left_pos=2*pos+1;
-    printf("index || %d\n",left_pos );
     fex=&(segtree_node[left_pos]);
     //Returns left child of input iterator
     return fex;
@@ -327,7 +326,6 @@ public:
     }
     int pos=fex->index;
     int right_pos=2*pos+2;
-    printf("index || %d\n",right_pos );
     fex=&(segtree_node[right_pos]);
     //Returns Right child of input iterator
     return fex;
