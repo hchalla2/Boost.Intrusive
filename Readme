@@ -1,4 +1,4 @@
-s a part of GSOC programme i worked on a project “Enhancing Boost Intrusive Library” with Boost C++ Libraries.
+As a part of GSOC programme i worked on a project “Enhancing Boost Intrusive Library” with Boost C++ Libraries.
 
 Enhancing Boost Intrusive library
 Intrusive library contains all the data structures like list ,vector ,avl tree ,map etc.This project is further extending the Intrusive library by implementing advanced data structures.The following data structures have been implemented as a part of this project.They are:-
