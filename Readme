@@ -1,3 +1,35 @@
+s a part of GSOC programme i worked on a project “Enhancing Boost Intrusive Library” with Boost C++ Libraries.
+
+Enhancing Boost Intrusive library
+Intrusive library contains all the data structures like list ,vector ,avl tree ,map etc.This project is further extending the Intrusive library by implementing advanced data structures.The following data structures have been implemented as a part of this project.They are:-
+
+Segment tree
+Fenwick tree
+Suffix tree
+Suffix automata
+Also implemented 2 other algorithms which are very important in solving graph based problems.They are:-
+
+Heavy light decomposition
+Centroid decomposition
+These data structures and algorithms have lot of applications like interval updates for segment tree or fenwick tree ,many string applications for suffix tree and suffix automata like longest substring etc.
+
+The link for the code implemented is :-
+
+https://github.com/BoostGSoC18/Advanced-Intrusive
+
+The link for the documentation is :-
+
+https://harisaicharan.github.io/
+
+My experience with organisation and mentor:-
+I am already familiar with some of the things implemented during GSOC but implementing them gave me better clarity and this is my first open source experience. I like the way GSOC programme has been structured, dividing work into 3 parts and giving students 1 month gap for each part where student is given full freedom to explore and implement code.Then students come up with lot of new ideas into projects which can help the organisation. I had a very good experience with boost c++ libraries as i was having no pressure from the organisation during any part of the process.My mentor helped me many times when ever i was stuck during the process.He gave me many references which helped me to complete the project fastly on time.I want to thank him for helping me when ever i needed.
+
+Challenges faced:-
+The major problem was understanding the existing code base, this is very essential for my project as the implementation of all the data structures has to be consistent otherwise it becomes very difficult for people who wants to improve the library.This was only during first few days of process.During GSOC project the difficult and also interesting part is thinking about the implementation which is optimised with respect to both space and time requirements.I tried my best taking ideas from mentor in optimising the implementation.
+
+Contents of the directory:-
+The github link given contains Documentation, Tests, Code and also demo files which show how to use the library, each in their respective directories.The directory names in repository are self-explanatory.
+
 Use c++14 for the segment tree library.
 
 Usage:-
